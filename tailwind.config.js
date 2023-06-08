@@ -5,6 +5,17 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // theme: {
+  //   extend: {
+  //     backgroundImage: {
+  //       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+  //       'gradient-conic':
+  //         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+  //     },
+  //   },
+  // },
+  // plugins: [],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -12,7 +23,38 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        primary: '#55423d',
+        headline: "#fffffe",
+        paragraph: "#fff3ec",
+        highlight: "##e78fb3",
+        secondary: "#ffc0ad",
+        tertiary: "#9656a1",
+        stroke: "#271c19"
+      },
+      
     },
+    // screens:{
+    //   "2xl": {max: "1535px"},
+    //   //this means  @media(max-width: 1535px )
+    //   xl: { max: "1279px" },
+    //   // => @media (max-width: 1279px) { ... }
+
+    //   lg: { max: "1023px" },
+    //   // => @media (max-width: 1023px) { ... }
+
+    //   md: { max: "767px" },
+    //   // => @media (max-width: 767px) { ... }
+
+    //   sm: { max: "639px" },
+    //   // => @media (max-width: 639px) { ... }
+
+    //   xs: { max: "479px" },
+    //   // => @media (max-width: 479px) { ... }
+
+    // }
   },
   plugins: [],
+
+  
 }
